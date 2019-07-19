@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Menu</title>
+        <link rel="stylesheet" type="text/css" href="Style.css">
+    </head>
+    <body>
+     <form action="Index.html" class="login-form">
+       <h1>Login</h1>
+       <div class="textb">
+           <input type="text">
+           <span data-placeholder="Usuario"></span>
+       </div> 
+       <div class="textb">
+            <input type="password">
+            <span data-placeholder="Senha"></span>
+        </div> 
+        <input type="submit" class="logbtn" value="Login">
+        <div class="botton-text">
+            Não tem conta? <a href="#">Sing Up</a>
+        </div>
+     </form>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" charset="utf-8"></script> 
+      <script>
+       $(".textb input").on("focus",function(){
+        $(this).addClass("focus");
+       });
+
+       $(".textb input").on("blur",function(){
+           if($(this).val()==""){
+            $(this).removeClass("focus");
+           }
+       
+       });
+      </script>
+    </body>
+    <footer>
+
+    </footer>
+</html>
